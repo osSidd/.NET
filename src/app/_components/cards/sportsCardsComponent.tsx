@@ -9,9 +9,9 @@ export default function sportsCardsComponent({theme}:{theme:boolean}){
 
     return (
         <div style={{width: '96%'}} className="mx-auto my-4">
-            <h2 className={`font-bold text-2xl border-b-2 border-button ${theme ? 'text-white': 'text-black'} w-fit pb-2`}>Sports</h2>
-            <div className="mt-6 flex justify-between items-start">
-                <div className=" grid grid-cols-4 gap-y-8 w-full">
+            <h2 className={`font-bold text-2xl ml-8 md:ml-0 border-b-2 border-button ${theme ? 'text-white': 'text-black'} w-fit pb-2`}>Sports</h2>
+            <div className="mt-6 mx-auto w-fit lg:w-full gap-y-8 flex flex-col md:flex-row justify-between items-start">
+                <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-y-8 w-full">
                     {
                         cards.slice(0, 4*(count+1)).map(card => (
                             <Card

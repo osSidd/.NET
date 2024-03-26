@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Ad({theme}:{theme:boolean}){
     return (
-        <div style={{height:'511px'}} className={`w-60 ${theme ? 'bg-CardDark' : 'bg-white'} p-3 shadow-lg flex flex-col items-center`}>
+        <div style={{height:'511px'}} className={`w-64 md:w-60 ${theme ? 'bg-CardDark' : 'bg-white'} p-3 shadow-lg flex flex-col items-center`}>
             <div className="relative">
                 <Image
                     src='/ad.jpeg'

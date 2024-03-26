@@ -2,7 +2,7 @@ import ImageBox from '../imageBox'
 
 export default function Card({title, img, events, sport , theme}:{theme: boolean, title: string, img: string, events: number, sport: string}){
     return (
-        <div style={{height:'511px'}} className={` ${theme ? 'bg-CardDark' : 'bg-white'} w-60 p-3 shadow-lg flex flex-col items-center`}>
+        <div style={{height:'511px'}} className={` ${theme ? 'bg-CardDark' : 'bg-white'} w-64  md:w-60 p-3 shadow-lg flex flex-col items-center`}>
             <ImageBox img={img}/>
             <p className={` ${theme ? 'text-white': 'text-black'} font-medium text-lg mt-4`}>{title}</p>
             <div className={`w-full ${theme ? 'bg-mainDark': 'bg-lightSecondary'} flex justify-between p-2 mt-4`}>

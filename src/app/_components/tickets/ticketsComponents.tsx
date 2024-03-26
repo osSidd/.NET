@@ -10,10 +10,10 @@ export default function TicketsComponents({theme}: {theme:boolean}){
     const translateX = 19.5
 
     return (
-        <div style={{width:'95%'}} className={`px-20 pt-16 mt-8 ${theme ? 'bg-collectionDark' : 'bg-white'} mx-auto`}>
-            <div className="text-center">
-                <h2 className={`font-bold text-5xl ${theme ? 'text-white' : 'text-black'}`}>Collection Spotlight</h2>
-                <p className={`font-normal text-sm mt-6 w-10/12 mx-auto ${theme ? 'text-white' : 'text-black'}`}>Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable experience. Grab yours today!</p>
+        <div style={{width:'95%'}} className={`px-2 md:px-20 pt-16 mt-8 ${theme ? 'bg-collectionDark' : 'bg-white'} mx-auto`}>
+            <div className="text-center w-full">
+                <h2 className={`font-bold text-3xl md:text-5xl ${theme ? 'text-white' : 'text-black'}`}>Collection Spotlight</h2>
+                <p className={`font-normal text-sm mt-6 md:w-10/12 mx-auto ${theme ? 'text-white' : 'text-black'}`}>Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable experience. Grab yours today!</p>
             </div>
         <div className="mt-12 flex items-center justify-between">
             <button onClick={() => {translate < 0 ? setTranslate(prev => prev + translateX) : undefined}} className=" w-9 h-12 border border-button flex items-center justify-center">
